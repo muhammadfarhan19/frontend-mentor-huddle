@@ -6,6 +6,7 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
   <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="font-awesome-4.7.0/css/font-awesome.min.css">
   <script src="https://cdn.tailwindcss.com"></script>
   <script>
     tailwind.config = {
@@ -116,41 +117,39 @@
     </section>
     <img src="./images/bg-footer-top-desktop.svg" alt="" class="w-full bg-white">
   </section>
-  <footer class="bg-veryDarkCyan px-12 pt-36 pb-20 lg:px-32 lg:py-32">
-    <aside class="w-full flex flex-col">
-      <h1 class="text-white text-xl lg:text-3xl font-medium uppercase">Newsletter</h1>
-      <p>
+  <footer class="bg-veryDarkCyan px-12 pt-36 pb-20 lg:px-32 lg:py-32 flex flex-col sm:flex-row-reverse text-white gap-10 lg:justify-end">
+    <aside class="w-full lg:w-3/4 flex flex-col gap-4 h-1/2 lg:h-full">
+      <h1 class="text-xl lg:text-3xl font-medium uppercase">Newsletter</h1>
+      <p class="w-3/4  ">
         To recieve tips on how to grow your community, sign up to our weekly newsletter. We’ll never
         send you spam or pass on your email address
       </p>
-      <section class="w-full">
-        <input type="text" name="" id="">
+      <section class="w-full flex flex-col lg:flex-row gap-3 h-20 lg:h-10">
+        <input type="text" name="" id="" class="w-full lg:w-3/5 h-1/2 lg:h-full rounded">
         <button
-          class="bg-pink text-veryPaleBlue px-10 py-3 rounded-md shadow-xl lg:px-20 lg:py-4 transition-all duration-200 hover:-translate-y-1">Get
+          class="bg-pink text-veryPaleBlue rounded w-full lg:w-3/5 xl:w-2/5 h-1/2 lg:h-full">Get
           Started For Free</button>
       </section>
     </aside>
-    <aside class="w-full flex flex col">
-      <section>
-        <img src="./images/logo-bottom.svg" alt="" class="w-full cursor-pointer">
+    <aside class="w-full lg:w-3/4 flex flex-col justify-start items-start gap-4">
+      <section class=" w-full lg:w-2/3">
+        <img src="./images/logo-bottom.svg" alt="" class="w-full cursor-pointer mb-3">
         <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Molestias pariatur ab nemo dolorem rem!</p>
       </section>
-      <section>
-        <aside>
-          <img src="./images/icon-phone.svg" alt="">
+      <section class="">
+        <aside class="flex gap-3 mb-2 items-center">
+          <img src="./images/icon-phone.svg" alt="" class="w-1/8">
           <h3>Phone: +6285156219612</h3>
         </aside>
-        <aside>
-          <img src="./images/icon-email.svg" alt="">
-          <h3>Phone: hamidie.farhan@gmail.com</h3>
+        <aside class="flex gap-3 mt-2 items-center">
+          <img src="./images/icon-email.svg" alt="" class="w-1/8 h-full">
+          <h3>hamidie.farhan@gmail.com</h3>
         </aside>
       </section>
-      <section class="flex flex-col border w-14">
-        <aside class="">
-          <img src="./images/facebook-svgrepo-com.svg" alt="" class="w-auto border p-0">
-        </aside>
-        <img src="./images/instagram-svgrepo-com.svg" alt="">
-        <img src="./images/twitter-rounded-svgrepo-com.svg" alt="">
+      <section class="flex gap-3">
+        <i class="fa fa-facebook-square" aria-hidden="true"></i>
+        <i class="fa fa-instagram" aria-hidden="true"></i>
+        <i class="fa fa-twitter-square" aria-hidden="true"></i>
       </section>
     </aside>
   </footer>
